@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
+:root{
+    --primary-color: #196EB5;
+    --secondary-color:#DCA11D;
+    --accent1-color: #FFEDCB;
+    --accent2-color: #0c0c0c;
+  
+    --heading-font: 'Passion One', cursive;
+    --paragraph-font: 'Nunito', sans-serif;
+  
+    --nav-background-color:#FFEDCB;
+    --nav-link-color: #887456;
+    --nav-hover-link-color: #DCA11D;
+    --nav-hover-background-color: #196EB5;
+    }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  padding: 10px;
+  }
+ 
+p{
+  padding: 10px;
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  color:var(--accent2-color);
+  } 
+
+body{ 
+  max-width: 900px;
+  }
+
+div.hero{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+div.hero h1 {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(238, 233, 233, 0.819);
+}
+
+div.hero article {
+  position: absolute;
+  background-color: rgba(230, 230, 236, 0.863);
+  top: 100px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+} 
+
+div.hero article img{ 
+  float:right;
+  width: 30%;
+  padding: 25px;
+}
+
+footer img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
