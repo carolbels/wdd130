@@ -1,23 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins&family=Young+Serif&display=swap');
+
+:root{
+    --heading-font: 'Poppins', sans-serif;
+    --heading2-font:'Young Serif', serif;
+    --paragraph-font: 'Lora', serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--paragraph-font);
 }
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color:white;
     display: block;
-    padding: 10px;   
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500; 
+    font-family: var(--heading-font);
+    text-align: center;  
 }
 
 h1 {
     color:steelblue;
     margin: 1rem;
+    font-family: var(--heading-font);
+    border-bottom: 1px solid steelblue;
 }
 
 main img {
@@ -35,20 +54,29 @@ p{
     margin: 1rem;
 }
 
-main{
-    max-width: 840px;
-}
-
 aside {
     width: 20em;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
     width: 200px;
     height: auto;
-    margin: 3rem 0 1rem 1rem;
+    margin: 4rem 0 1rem 1rem;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
 }
 
 footer {
@@ -57,7 +85,7 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors */
+/*Class Selectors*/
 
 .box {
     margin: 1rem;
@@ -65,14 +93,23 @@ footer {
     padding: 1rem;
     background-color: #ca911f3d;
     color: #050505;
+    
 }
 
 aside h2 {
     position: absolute;
     top: 2px;
-   right: 40px;
+    right: 40px;
+    font-family: var(--heading2-font);
 
 }
+
 .indent{
     padding-left: 2rem;
 }
+
+.grid {
+display: grid;
+align-items: center;
+}
+
