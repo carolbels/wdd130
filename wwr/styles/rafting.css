@@ -13,24 +13,26 @@
     --nav-link-color: #887456;
     --nav-hover-link-color: #DCA11D;
     --nav-hover-background-color: #196EB5;
-    }
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: var(--heading-font);
   color: var(--primary-color);
   padding: 10px;
-  }
+  text-align: center;
+  
+}
  
 p{
   padding: 10px;
   font-family: var(--paragraph-font);
   max-width: 960px;
   color:var(--accent2-color);
-  } 
+} 
 
 body{ 
   max-width: 900px;
-  }
+}
 
 div.hero{
   position: relative;
@@ -41,12 +43,15 @@ div.hero{
 div.hero h1 {
   position: absolute;
   top: 20px;
-  background-color: rgba(238, 233, 233, 0.819);
+  background-color: rgba(218, 213, 213, 0.589);
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 div.hero article {
   position: absolute;
-  background-color: rgba(230, 230, 236, 0.863);
+  background-color: rgba(218, 213, 213, 0.589);
   top: 100px;
 }
 
@@ -62,16 +67,95 @@ div.hero article img{
   padding: 25px;
 }
 
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.header img {
+  grid-column:2/3;
+  width: 90px;
+  height: auto;
+}
+
+.header nav {
+  grid-column: 3/4;
+  text-align: right;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: end;
+  justify-items: start;
+}
+
+footer p {
+  grid-column: 1/2;
+  padding: 0px;
+}
+
 footer img {
   width: 30px;
-  padding-left: 10px;
+  padding: 10px;
+}
+
+footer nav {
+  grid-column: 3/3;
 }
 
 
+header nav{
+  font-size: 1rem;
+  display: flex;
+  float: right;
+  margin: 1rem;
+}
 
+header nav a{
+  display: block;
+  text-decoration:none;
+  padding: 1rem;
+  font-family: var(--paragraph-font);
+  color:var(--primary-color);
+}
 
+header nav a:link, nav a:visited{
+  color: var(--nav-link-color);
+}
 
+header nav a:hover {
+  color:var(--nav-hover-link-color);
+}
 
+section h2 { 
+  text-align: center;
+}
+
+.adventure {
+  display: grid;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  justify-content: stretch;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.adventure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure{
+  margin: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-family: var(--paragraph-font);
+}
 
 
 
