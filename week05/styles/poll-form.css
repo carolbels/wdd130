@@ -1,0 +1,110 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+3:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*do not change the universal selector */
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.5em;
+    color: navy;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+    color: #050579;
+    padding-top: 3rem;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(140, 138, 138, 0.603);
+    padding: 1rem;
+}
+
+legend { 
+    padding: 3px;
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+}
+
+input, select, textarea, button {
+    height: 3rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1em;
+    padding: 0.5rem;
+}
+
+input[type="checkbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: white;
+    color: #000080;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+label[for="feedback"]{
+    text-align: center;
+}
+
+select[id="browser"]{
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top: 3px solid #000080;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 1rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
