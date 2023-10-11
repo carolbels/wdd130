@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+3:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*do not change the universal selector */
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.5em;
+    color: navy;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+    color: #050579;
+    padding-top: 3rem;
+}
+
+form {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(140, 138, 138, 0.603);
+    padding: 1rem;
+}
+
+input, select, textarea, button {
+    height: 3rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1em;
+    padding: 0.5rem;
+}
+
+textarea{
+    height: 6rem;
+    width: 40rem;
+}
+button {
+    background-color: white;
+    color: #000080;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+label[for="q3"]{
+    text-align: left;
+}
+
+select[id="q3"]{
+    text-align: left;
+    width: fit-content;
+}
+
+input[type="number"]{
+    width: 10rem;
+}
+
+input[type="text"]{
+    width: 10rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top: 3px solid #000080;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+
+
+

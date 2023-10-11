@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 130 | Basic HTML and CSS Quiz</title>
+        <meta name="description" content="Carol Aquino's HTML and CSS quiz">
+        <meta name="author" content="Carolina Aquino">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>  
+    <header>
+        <h1> &#9745; Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <div class="form-item question1">
+                        <label for="q1">1. What is the tag that defines an hiperlink in HTML? </label>
+                        <input type="text" id="q1" name="q1">
+                        <!--<a> -->
+                    </div>
+                    <div class="form-item question2">
+                        <label for="q2"> 2. Use the correct HTML tags to write a paragraph stating your name
+                            and favorite color. Add the title "Hello!"
+                        </label>
+                        <textarea id="q2" name="q2" rows="4" placeholder="type here"></textarea>
+                        <!-- <h1> Hello! </h1>
+                        <p> My name's Carol and I love red, yellow, and orange</p> -->
+                    </div>
+                    <div class="form-item question3">
+                        <label for="q3">3. A CSS rule includes:</label>
+                        <select id="q3" name="q3">
+                            <option value="" selected disabled> -- </option>
+                            <option value="one">external style sheets</option>
+                            <option value="two">a selector and a declaration block</option>
+                            <option value="three">a series of elements</option>
+                            <option value="four">elements that communicates with the browser</option>
+                        </select>
+                    </div>
+                        <!-- a selector and a declaration block-->
+                    <div class="form-item question4">
+                        <label for="q4">4. Each color in an RGB value can vary between 0 and ____?</label>
+                        <input type="number" id="q4" name="q4">
+                        <!--255 -->
+                    </div><br>
+                </fieldset>
+                        <button type="submit"> Submit Quiz</button><br>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;2023 | &#9997;HTML and CSS Quiz&#9997; | Carol Aquino</p>
+        </footer>
+    </body>
+</html>
