@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
 :root{
     --primary-color: #196EB5;
-    --secondary-color:#DCA11D;
-    --accent1-color: #FFEDCB;
-    --accent2-color: #0c0c0c;
+    --secondary-color:#3F4756;
+    --accent1-color: #A3ACBD;
+    --accent2-color: #89651D;
   
-    --heading-font: 'Passion One', cursive;
-    --paragraph-font: 'Nunito', sans-serif;
+    --heading-font: 'Ubuntu', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
   
-    --nav-background-color:#FFEDCB;
-    --nav-link-color: #887456;
-    --nav-hover-link-color: #DCA11D;
-    --nav-hover-background-color: #196EB5;
+    --nav-background-color:#a3acbd44;
+    --nav-link-color: #89651D;
+    --nav-hover-link-color: #3F4756;
+    --nav-hover-background-color: #C1984F;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -20,14 +19,22 @@ h1, h2, h3, h4, h5, h6{
   color: var(--primary-color);
   padding: 10px;
   text-align: center;
-  
+  font-size: 30px;
+  margin: 0 auto;
 }
- 
+
+h1 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+}
+
 p{
   padding: 10px;
   font-family: var(--paragraph-font);
   max-width: 960px;
-  color:var(--accent2-color);
+  color:black;
+  font-size: larger;
 } 
 
 body{ 
@@ -42,8 +49,8 @@ div.hero{
 
 div.hero h1 {
   position: absolute;
-  top: 20px;
-  background-color: rgba(218, 213, 213, 0.589);
+  top: 90px;
+  background-color: rgba(208, 224, 228, 0.866);
   width: 100%;
   padding-right: 0;
   padding-left: 0;
@@ -51,8 +58,8 @@ div.hero h1 {
 
 div.hero article {
   position: absolute;
-  background-color: rgba(218, 213, 213, 0.589);
-  top: 100px;
+  background-color:rgba(208, 224, 228, 0.866);
+  top: 160px;
 }
 
 .hero img {
@@ -63,8 +70,9 @@ div.hero article {
 
 div.hero article img{ 
   float:right;
-  width: 30%;
+  width: 20%;
   padding: 25px;
+  border-radius:2.5em;
 }
 
 .header {
@@ -74,8 +82,8 @@ div.hero article img{
 }
 
 .header img {
-  grid-column:2/3;
-  width: 90px;
+  grid-column:1/2;
+  width: 110px;
   height: auto;
 }
 
@@ -119,14 +127,11 @@ header nav a{
   padding: 1rem;
   font-family: var(--paragraph-font);
   color:var(--primary-color);
-}
-
-header nav a:link, nav a:visited{
-  color: var(--nav-link-color);
+  font-size: 30px;
 }
 
 header nav a:hover {
-  color:var(--nav-hover-link-color);
+  background-color:var(--nav-background-color);
 }
 
 section h2 { 
@@ -146,6 +151,7 @@ section h2 {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 1.2em;
 }
 
 figure{
@@ -155,10 +161,117 @@ figure{
 figcaption {
   text-align: center;
   font-family: var(--paragraph-font);
+  color: black;
+  font-size: 20px;
+}
+
+.team {
+  display: grid;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  justify-content: stretch;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5em;
+}
+
+.introduction h1{
+  font-style: normal;
+}
+
+.introduction {
+  background-color: var(--nav-background-color);
+  height: 12rem;
+  text-align: center;
+}
+
+form {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px;
+  background-color:var(--nav-background-color);
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+input, label, select, textarea, button {
+  height: 1.5rem;
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius:0.5rem;
+ }
+
+textarea{
+  height: 6rem;
+  width: 40rem;
 }
 
 
+input[type="checkbox"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: bottom;
+}
 
+.form-item {
+  display: grid;
+  align-items: center;
+}
 
+.column1 {
+  grid-template-columns: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
+  margin: 0 auto;
+}
+
+.column2 {
+  display:block;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: .5rem;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-family: var(--paragraph-font);
+  font-weight: 700;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+.USA {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info{
+  width: fit-content;
+}
+
+.headquarters{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
 

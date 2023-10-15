@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Passion+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Ubuntu:ital,wght@0,400;1,700&display=swap');
 :root{
   --primary-color: #196EB5;
-  --secondary-color:#DCA11D;
-  --accent1-color: #FFEDCB;
-  --accent2-color: #887456;
+  --secondary-color:#3F4756;
+  --accent1-color: #A3ACBD;
+  --accent2-color: #89651D;
 
-  --heading-font: 'Passion One', cursive;
-  --paragraph-font: 'Nunito', sans-serif;
+  --heading-font: 'Ubuntu', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
 
-  --nav-background-color:#FFEDCB;
-  --nav-link-color: #887456;
-  --nav-hover-link-color: #DCA11D;
-  --nav-hover-background-color: #196EB5;
+  --nav-background-color:#A3ACBD;
+  --nav-link-color: #89651D;
+  --nav-hover-link-color: #3F4756;
+  --nav-hover-background-color: #C1984F;
   }
 
   body{
@@ -21,6 +19,7 @@
     max-width: 960px;
     padding: 20px;
   }
+  
   h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     color: var(--primary-color);
