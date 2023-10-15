@@ -34,7 +34,7 @@ p{
   font-family: var(--paragraph-font);
   max-width: 960px;
   color:black;
-  font-size: larger;
+  font-size: 20px;
 } 
 
 body{ 
@@ -115,7 +115,7 @@ footer nav {
 
 
 header nav{
-  font-size: 1rem;
+  font-size: 12px;
   display: flex;
   float: right;
   margin: 1rem;
@@ -245,10 +245,10 @@ button {
   color: #ffffff;
   border-radius: .5rem;
   padding: 10px;
-  font-size: 1.8rem;
+  font-size: 25px;
   font-family: var(--paragraph-font);
   font-weight: 700;
-  width: fit-content;
+  width: 150px;
   height: fit-content;
   text-align: center;
   margin: 0 auto;
@@ -272,6 +272,6 @@ button:hover {
   grid-template-columns: 50% 50%;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
