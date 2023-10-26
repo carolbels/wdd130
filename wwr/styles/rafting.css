@@ -17,7 +17,7 @@
 h1, h2, h3, h4, h5, h6{
   font-family: var(--heading-font);
   color: var(--primary-color);
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
@@ -32,34 +32,38 @@ h1 {
 p{
   padding: 10px;
   font-family: var(--paragraph-font);
-  max-width: 960px;
+  max-width: 100%;
   color:black;
   font-size: 20px;
 } 
 
 body{ 
-  max-width: 900px;
-}
+  width: auto;
+  align-items: center;
+ }
 
-div.hero{
+.hero{
   position: relative;
   height: auto;
   width: 100%;
 }
 
-div.hero h1 {
+.hero h1 {
   position: absolute;
   top: 90px;
-  background-color: rgba(208, 224, 228, 0.866);
+  background-color: rgba(255, 255, 255, 0.866);
   width: 100%;
   padding-right: 0;
   padding-left: 0;
 }
 
-div.hero article {
+.hero article {
   position: absolute;
-  background-color:rgba(208, 224, 228, 0.866);
-  top: 160px;
+  background-color:rgba(255, 255, 255, 0.866);
+  top: 190px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero img {
@@ -68,7 +72,11 @@ div.hero article {
   height: auto;
 } 
 
-div.hero article img{ 
+.hero p{
+  padding-top: 50px;
+}
+
+.hero article img{ 
   float:right;
   width: 20%;
   padding: 25px;
@@ -83,8 +91,9 @@ div.hero article img{
 
 .header img {
   grid-column:1/2;
-  width: 110px;
+  width: 150px;
   height: auto;
+  padding: 10px;
 }
 
 .header nav {
@@ -97,6 +106,7 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   align-items: end;
   justify-items: start;
+  border-top: 3px solid black;
 }
 
 footer p {
@@ -113,12 +123,10 @@ footer nav {
   grid-column: 3/3;
 }
 
-
 header nav{
   font-size: 12px;
   display: flex;
-  float: right;
-  margin: 1rem;
+  margin: 0 auto;
 }
 
 header nav a{
@@ -212,13 +220,12 @@ input, label, select, textarea, button {
   font-size: 20px;
   padding: 0.5rem;
   border-radius:0.5rem;
- }
+}
 
 textarea{
   height: 6rem;
   width: 40rem;
 }
-
 
 input[type="checkbox"] {
   height: 1.5rem;
@@ -264,7 +271,8 @@ button:hover {
 }
 
 .info{
-  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .headquarters{
@@ -275,3 +283,223 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.contact1 section{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 10% 80% 10%;
+  margin: 0 auto;
+}
+
+.contact1 img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  margin: 0 auto;
+}
+
+.contact1 h2 {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0 auto;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+}
+
+.details {
+  display: grid;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  justify-content: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.details img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5em;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  grid-row: 1/2;
+}
+
+.details p {
+  text-align: center;
+  grid-row: 2/3;
+}
+
+.title {
+  padding: 15px;
+  background-color: var(--nav-background-color);
+  font-weight: 600;
+}
+
+.contactus {
+  width: 100px;
+  background-color: var(--primary-color);
+  border-radius: 0.5em;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contactus:hover{
+  background-color: var(--accent2-color);
+}
+
+.contactus1:hover{
+  background-color: var(--accent2-color);
+}
+
+table{
+  width: 100%;
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+.col1 {
+  width: 20%;
+  text-align: end;
+  font-weight: 600;
+  padding-right: 30px;
+}
+
+.col2 {
+  width: 60%;
+}
+
+td .contactus1  {
+  width: 20%;
+  align-items: center;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th, td{
+  padding: 10px;
+  vertical-align: middle;
+}
+
+th{
+  text-align: center;
+  margin: 0 auto;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-size: 30px;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.contactus1 {
+  background-color: var(--primary-color);
+  border-radius: 0.5em;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+  vertical-align: middle;
+  width: 20%;
+  margin-left: 40px;
+}
+
+.newsletter {
+  width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  display: grid;
+}
+
+.newsletter fieldset{
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgba(140, 138, 138, 0.603);
+  padding: 1rem;
+}
+
+.newsletter legend { 
+  padding: 3px;
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+}
+
+.newsletter input, select, textarea, button {
+  height: 2rem;
+  width: 35rem;
+  font-family: var(--paragraph-font);
+  font-size: 1em;
+  padding: 0.5rem;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem;
+  font-size: 20px;
+  font-family: var(--paragraph-font);
+  font-weight: 600;
+  width: 10rem;
+  height: 3rem;
+}
+
+.knowmore {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--nav-background-color);
+}
+
+.knowmore img {
+  margin: 0 auto;
+  justify-self: center;
+  padding: 10px;
+}
+
+.tripbutton {
+  background-color: var(--primary-color);
+  border-radius: 0.5em;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 30px;
+  width: 40rem;
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+}
+
+.perfectadv {
+  display: grid;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  justify-content: stretch;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.perfectadv img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5em;
+}
+
+.perfectadv p {
+  text-align: center;
+  grid-row: 2/3;
+}
